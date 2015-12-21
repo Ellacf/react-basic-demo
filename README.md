@@ -1,4 +1,4 @@
-React-Basic-Demo
+# React-Basic-Demo
 主题在于：配置基础react环境
 
 包含以下功能：
@@ -15,3 +15,27 @@ React-Basic-Demo
    README.md(阅读我)
    server.js(webpack-dev-server配置)
    webpack.config.js(webpack配置)
+
+
+ ## Running Example
+
+ First, clone the project:
+
+ ```
+ git clone https://github.com/Ellacf/react-basic-demo.git
+ ```
+
+ Then install the dependencies in the root folder:
+
+ ```
+ cd react-basic-demo
+ npm install
+ ```
+
+
+ Finally, run the project:
+
+ ```
+ npm start
+ open http://localhost:3000
+ ```
