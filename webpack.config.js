@@ -33,13 +33,13 @@ module.exports = {
         exclude: /node_modules/,
         include: path.join(__dirname, 'src')
       },
-      {
-        test: /\.js[x]?$/,
-        loaders: 'babel',
-        query: {
-            presets: ['react', 'es2015']
-        }
-      },
+      // {
+      //   test: /\.js[x]?$/,
+      //   loaders: 'babel-loader',
+      //   query: {
+      //       presets: ['react', 'es2015']
+      //   }
+      // },
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
