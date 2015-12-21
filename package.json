@@ -4,7 +4,10 @@
   "description": "build a hot-load & webpack-dev-server  environment about basic react ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "build": "webpack",
+    "build-dist": "NODE_ENV=production browserify index.js | uglifyjs -m > bundle.min.js",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
   },
   "repository": {
     "type": "git",
@@ -22,13 +25,9 @@
     "url": "https://github.com/Ellacf/react-basic-demo/issues"
   },
   "homepage": "https://github.com/Ellacf/react-basic-demo#readme",
-  "scripts": {
-    "build": "webpack",
-    "build-dist": "NODE_ENV=production browserify index.js | uglifyjs -m > bundle.min.js",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
-  },
   "dependencies": {
     "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
     "react-redux": "^4.0.2",
